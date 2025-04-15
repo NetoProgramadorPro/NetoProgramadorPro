@@ -43,9 +43,12 @@ window.onload = function() {
     recorrerMatriz(mPoliFes, PoliFes);
     recorrerMatriz(mFesPoli, FesPoli);
 
-    if (horas>=18 && minutos >= 30) {
-      PrecioC.textContent = "Costo de pasaje: $6.00";
-      PrecioC2.textContent = "Costo de pasaje: $8.00";
+    if (horas==18 && minutos >= 30 ) {
+        PrecioC.textContent = "Costo de pasaje: $6.00";
+        PrecioC2.textContent = "Costo de pasaje: $8.00";     
+    }else if(horas>18){
+        PrecioC.textContent = "Costo de pasaje: $6.00";
+        PrecioC2.textContent = "Costo de pasaje: $8.00";
     }
 }
 
