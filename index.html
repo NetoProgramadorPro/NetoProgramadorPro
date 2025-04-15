@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FESway</title>
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo4.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/indexStyle.css">
+
+  </head>
+  <body>
+      <!--Empieza el NavBar-->
+
+      <nav class="navbar navbar-expand-lg mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logos/logo1.svg" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
+            <strong>FESway</strong>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-body-secondary" aria-current="page" href="#"><strong>Inicio</strong></a>
+            </li>
+            <div class="border-start border-secondary  border-1" style="height: auto; margin: 6px 0px;"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="suburbano.html"><strong>Suburbano</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inter.html"><strong>Intercampus</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CCaminos.html"><strong>Cuatro Caminos</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="poli.html"><strong>Politécnico</strong></a>
+            </li>
+           </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Termina el NavBar-->
+      <!--Empieza el Contenido-->
+
+      <!--tarjetas-->
+      <div class="container mb-4">
+        <div class="row justify-content-center">
+
+          <!-- Tarjeta -->
+          <div class="col-12 text-center m-3 border-bottom border-2 border-primary">
+            <p class="fs-4 "><strong>¡Tu carruaje escolar se va en breve! Salidas próximas:</strong></p>
+         </div>
+           
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card cardStyle h-100">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Parte de arriba -->
+                <div class="text-center border-bottom pb-2">
+                  <p class="card-text fs-5"><strong>Suburbano <i class="fa-solid fa-arrow-right"></i> FES C4</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="SubuFes">--:--</p>
+                  </div>
+                </div>
+
+                <!-- Parte de abajo -->
+                <div class="text-center pt-2">
+                  <p class="card-text fs-5"><strong>FES C4 <i class="fa-solid fa-arrow-right"></i> Suburbano</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="FesSubu">--:--</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-center" id="PrecioC">Costo de pasaje: $3.00</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card cardStyle h-100">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Parte de arriba -->
+                <div class="text-center border-bottom pb-2">
+                  <p class="card-text fs-5"><strong>Intercampus <i class="fa-solid fa-arrow-right"></i> FES C4</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="CunoFes">--:--</p>
+                  </div>
+                </div>
+
+                <!-- Parte de abajo -->
+                <div class="text-center pt-2">
+                  <p class="card-text fs-5"><strong>FES C4 <i class="fa-solid fa-arrow-right"></i> Intercampus</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="FesCuno">--:--</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-center" id="PrecioC2">Costo de pasaje: $3.00</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card cardStyle h-100">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Parte de arriba -->
+                <div class="text-center border-bottom pb-2">
+                  <p class="card-text fs-5"><strong>4 Caminos <i class="fa-solid fa-arrow-right"></i> FES C4</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="CCaminosFes">--:--</p>
+                  </div>
+                </div>
+
+                <!-- Parte de abajo -->
+                <div class="text-center pt-2">
+                  <p class="card-text fs-5"><strong>FES C4 <i class="fa-solid fa-arrow-right"></i> 4 Caminos</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="FesCCaminos">--:--</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-center">Costo de pasaje: $13.50</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card cardStyle h-100">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Parte de arriba -->
+                <div class="text-center border-bottom pb-2">
+                  <p class="card-text fs-5"><strong>Politécnico <i class="fa-solid fa-arrow-right"></i> FES C4</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="PoliFes">--:--</p>
+                  </div>
+                </div>
+
+                <!-- Parte de abajo -->
+                <div class="text-center pt-2">
+                  <p class="card-text fs-5"><strong>FES C4 <i class="fa-solid fa-arrow-right"></i> Politécnico</strong></p>
+                  <div class="d-flex justify-content-center align-items-center gap-4 proximaS text-white">
+                    <p class="m-0"><strong>Próxima salida:</strong></p>
+                    <p class="m-0 fs-6" id="FesPoli">--:--</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-center">Costo de pasaje: $13.50</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--fin de terjetas-->
+
+      <!--Mapas y quejas-->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-8">
+
+            <div class="col-11 m-3 border-bottom border-2 border-primary">
+              <p class="fs-5 "><strong>¿Dónde anda el camión? Aquí te dejamos el chisme con mapa incluido.</strong></p>
+            </div>
+            <!-- Navegación de pestañas -->
+            <ul class="nav nav-tabs bg-" id="miTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab"><strong>Suburbano</strong></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"><strong>Intercampus</strong></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"><strong>Cuatro Caminos</strong></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab"><strong>Politécnico</strong></button>
+              </li>
+            </ul>
+
+<!-- Contenido de las pestañas -->
+<div class="tab-content p-2 mb-4" id="miTabContent">
+  <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d30054.554800897586!2d-99.20259082851305!3d19.67771102587056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x85d1f59d7c63ddcf%3A0x2108086b0394ce84!2sSuburbano%20Cuautitlan%2C%20Amado%20Nervo%20Manzana%20001%2C%20Paseos%20de%20Cuautitlan%2C%2054807%20Cuautitl%C3%A1n%2C%20M%C3%A9x.!3m2!1d19.667097599999998!2d-99.1758093!4m5!1s0x85d1f54156948569%3A0x9ef349d975d1150f!2sFES%20Cuautitl%C3%A1n%20UNAM%20Campus%20IV%2C%20A%20Teoloyucan%20MZ%20001%2C%20San%20Sebastian%20Xhala%2C%20Cuautitl%C3%A1n%20Izcalli%2C%20Estado%20de%20M%C3%A9xico!3m2!1d19.694766899999998!2d-99.18885879999999!5e0!3m2!1ses!2smx!4v1744507477638!5m2!1ses!2smx" width="100%" height="400" style="border:5px solid black; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="tab-pane fade" id="tab2" role="tabpanel">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d116807.1404171159!2d-99.1908447069794!3d19.66219454223746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x85d1f300575014fb%3A0x48b96db0c009f33e!2sFES%20cuautitl%C3%A1n%20campo%201%2C%20Av.%20HDA.%20LA%20QUEBRADA%20MZ%20026%2C%20Ex-Hacienda%20Santa%20Ines%2C%20Ex-Hacienda%20Santa%20In%C3%A9s%2C%20M%C3%A9x.!3m2!1d19.6370832!2d-99.20818109999999!4m5!1s0x85d1f54156948569%3A0x9ef349d975d1150f!2sFES%20Cuautitl%C3%A1n%20UNAM%20Campus%20IV%2C%20A%20Teoloyucan%20MZ%20001%2C%20San%20Sebastian%20Xhala%2C%20Cuautitl%C3%A1n%20Izcalli%2C%20Estado%20de%20M%C3%A9xico!3m2!1d19.694766899999998!2d-99.18885879999999!5e0!3m2!1ses!2smx!4v1744514971772!5m2!1ses!2smx" width="100%" height="400" style="border:5px solid black; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="tab-pane fade" id="tab3" role="tabpanel">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d116837.55579512888!2d-99.18476359307104!3d19.62039728159297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x85d20243b8ffcaad%3A0xd518c3643630d949!2sMetro%20Cuatro%20Caminos%2C%20Paradero%20Cuatro%20Caminos%20MZ%20002%2C%20Parque%20Industrial%2C%20Naucalpan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!3m2!1d19.4603543!2d-99.21570539999999!4m5!1s0x85d1f54156948569%3A0x9ef349d975d1150f!2sFES%20Cuautitl%C3%A1n%20UNAM%20Campus%20IV%2C%20A%20Teoloyucan%20MZ%20001%2C%20San%20Sebastian%20Xhala%2C%20Cuautitl%C3%A1n%20Izcalli%2C%20Estado%20de%20M%C3%A9xico!3m2!1d19.694766899999998!2d-99.18885879999999!5e0!3m2!1ses!2smx!4v1744515109869!5m2!1ses!2smx" width="100%" height="400" style="border:5px solid black; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="tab-pane fade" id="tab4" role="tabpanel">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d214320.0385558726!2d-99.14714229022842!3d19.591108197707356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x85d1f98611978081%3A0x884ffe89253f6aa6!2sMetro%20polit%C3%A9cnico%2C%20Eje%20Central%20L%C3%A1zaro%20C%C3%A1rdenas%2C%20San%20Bartolo%20Atepehuacan%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!3m2!1d19.500908499999998!2d-99.14860519999999!4m5!1s0x85d1f54156948569%3A0x9ef349d975d1150f!2sFES%20Cuautitl%C3%A1n%20UNAM%20Campus%20IV%2C%20A%20Teoloyucan%20MZ%20001%2C%20San%20Sebastian%20Xhala%2C%20Cuautitl%C3%A1n%20Izcalli%2C%20Estado%20de%20M%C3%A9xico!3m2!1d19.694766899999998!2d-99.18885879999999!5e0!3m2!1ses!2smx!4v1744515196147!5m2!1ses!2smx" width="100%" height="400" style="border:5px solid black; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+
+
+</div>
+<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center mb-2">
+  <!--Quejas-->
+  <div class="d-flex justify-content-center align-items-center p-4 flex-column bg-secondary bg-gradient" style="border-radius: 10%;">
+    <p class="fs-4 text-white"><strong>Denuncias, quejas o sugerencias del servicio de transporte</strong></p>
+    <img src="img/pumaIndex.webp" alt="PUMAS" class="img-fluid">
+    
+    <div class="d-grid col-12">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4dOXtkhnZqDGTuimkrcahikw85ZK-hPmx23mOA4tGgylbKA/viewform" target="_blank" class="m-0"  style="width: 100%;">
+      <button type="button" class="btn btn-primary" style="width: 100%;"><strong> ¡Dilo aquí! </strong> </button>
+    </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+      <!--Termina el Contenido-->
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <script src="js/javaS.js"></script>
+  </body>
+  
+  <footer>
+  <!-- Empieza el Footer -->
+  <div class="container-fluid bg-dark text-white p-5 pb-2">
+    <div class="row">
+
+      <!-- Agrupación de las dos primeras columnas -->
+      <div class="col-12 col-lg-6 mb-4">
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-6">
+            <h5 class="mb-3">Rutas</h5>
+            <ul class="list-unstyled">
+              <li><a href="suburbano.html" class="link-secondary text-decoration-none footerlink">Suburbano</a></li>
+              <li><a href="inter.html" class="link-secondary text-decoration-none footerlink">Intercampus</a></li>
+              <li><a href="CCaminos.html" class="link-secondary text-decoration-none footerlink">Cuatro Caminos</a></li>
+              <li><a href="poli.html" class="link-secondary text-decoration-none footerlink">Politécnico</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="col-6">
+            <h5 class="mb-3">Contacto</h5>
+            <ul class="list-unstyled d-flex  gap-3">
+            <li>
+              <a href="https://www.facebook.com/fescunamoficial" class="link-secondary text-decoration-none fs-4" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/FESC_UNAM" class="link-secondary text-decoration-none fs-4" target="_blank">
+              <i class="fab fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/fescunamoficial/?hl=es" class="link-secondary text-decoration-none fs-4" target="_blank">
+              <i class="fab fa-instagram"></i> 
+            </li>
+            
+            </ul>
+            <a href="#" class="text-secondary text-decoration-none fs-4">
+              <i class="fa-solid fa-phone"></i> 55 5623 1905
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Columna 3: Texto -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h5 class="mb-3">Sobre el proyecto</h5>
+        <p class="text-secondary justify-text">
+          Este sitio es creado por y para la comunidad universitaria de la FES Cuautitlán, Campo 4. Nuestro objetivo es facilitar el acceso a la información sobre el transporte universitario, promoviendo la colaboración y el bienestar entre estudiantes, docentes y personal.
+        </p>
+      </div>
+
+      <!-- Columna 4: Logo -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center mb-4">
+        <img src="img/logos/logo2.svg" alt="Logo" class="img-fluid" style="max-height: 80%;">
+      </div>
+
+      <!-- Línea final -->
+      <div class="col-12 text-center pt-3 border-top border-secondary">
+         <p class="mb-0">&copy; 2025 Transporte Universitario FES Cuautitlán. Todos los derechos reservados.</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- Termina el Footer -->
+</footer>
+</html>

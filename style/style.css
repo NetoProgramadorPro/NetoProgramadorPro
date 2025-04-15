@@ -1,0 +1,77 @@
+body{
+	background:  #eaf2f8 ;
+}
+
+/* Navbar */
+
+.navbar-brand{
+	font-family: DejaVu Sans;
+	font-size: 200%;
+	margin: 0;
+}
+
+nav.navbar { 
+	padding: 0;
+    z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(90deg, #2471a3, #1a5276, #154360); /* degradado base */
+  }
+
+  nav.navbar::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: 
+      linear-gradient(#ffffff22 5px, transparent 1px),
+      linear-gradient(90deg, #ffffff22 5px, transparent 1px);
+    background-size: 20px 20px;
+    transform: rotate(5deg);
+    opacity: 0.4;
+    z-index: 0;
+  }
+
+  .navbar-brand{
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  .navbar-brand:hover {
+    color: white;
+  }
+  .nav-link{
+    position: relative;
+    z-index: 2;
+    font-size: 120%;
+    color:  #5499c7 ;
+  }
+
+button {
+  z-index: 1;
+}
+
+.navbar-nav{
+  background: #eaf2f8;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav{
+    margin-bottom: 10px;
+  }
+  .img-footer{
+    display: none ;
+  }
+}  
+
+.navbar-toggler{
+  background:  #e5e7e9;
+  box-shadow: 0px 0px 5px white;
+}
+
+/* Fin Navbar */

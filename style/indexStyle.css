@@ -1,0 +1,38 @@
+.proximaS {
+	border-radius: 15px;
+	border: solid 1px black;
+	background:  #2471a3 ;
+	padding: 2px;
+}
+
+.cardStyle{
+	background: linear-gradient(0deg, #5dade2, #85c1e9,#5dade2) ;
+	box-shadow: 5px 5px 10px  #1a5276  inset;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #aed6f1; 
+    color:  #154360 ;
+    border: 1px solid #0d6efd;             
+    border-bottom: 4px solid #aed6f1;
+ }
+
+ #miTab{
+ 	border-bottom: 2px solid #0d6efd;
+ 	margin-bottom: -1px;
+ }
+
+ #miTabContent{
+ 	background-color: #aed6f1;
+ 	border: 1px solid #0d6efd;
+ 	border-top: none;
+ }
+
+
+ @media (max-width: 991px) {
+ 	.nav-tabs .nav-link.active{
+ 		border-bottom: 1px solid #0d6efd;
+ 		border-radius: 10px;
+ 		margin: 5px;
+ 	}
+ }  
